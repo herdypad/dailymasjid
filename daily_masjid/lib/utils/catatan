@@ -1,0 +1,115 @@
+Image.asset(
+                        "assets/images/home2.png",
+                        fit: BoxFit.cover,
+                      ),
+
+
+InkWell(
+                  onTap: () {},
+                  hoverColor: primaryColor3,
+                  child: Ink(
+                    width: 41.w,
+                    height: 35.h,
+                    decoration: BoxDecoration(
+                        color: kWhite, borderRadius: BorderRadius.circular(9)),
+                    child: Padding(
+                      padding: const EdgeInsets.all(6.0),
+                      child: Image.asset(
+                        'assets/icons/icon_bell.png',
+                        width: 21,
+                        height: 22,
+                      ),
+                    ),
+                  ))
+
+
+//box with image
+                    Container(
+                width: 222,
+                height: 269,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                      image: AssetImage('assets/images/bg_profile.png'),
+                      fit: BoxFit.cover),
+                  color: primaryColor1,
+                ),
+              )
+
+
+
+              Text(
+                          "Masjid Agung malang",
+                          style: mediumText12.copyWith(color: primaryColor2),
+                        ),
+
+
+
+              //button icon
+              Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(5),
+                          color: primaryColor1,
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 14, vertical: 5),
+                          child: Text(
+                            "Register now",
+                            style: mediumText10.copyWith(
+                                fontSize: 10, color: kWhite),
+                          ),
+                        ),
+                      ),
+
+                      
+
+            ///container
+ Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.only(
+                              topLeft: Radius.circular(6),
+                              topRight: Radius.circular(6),
+                            ),
+                            color: primaryColor1,
+                          ),)
+
+
+          //boton Text
+
+          Container(
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(14),
+                                  color: primaryColor1,
+                                ),
+                                child: Padding(
+                                  padding: EdgeInsets.symmetric(
+                                      horizontal: 30.w, vertical: 5),
+                                  child: Text(
+                                    "Free",
+                                    style: mediumText10.copyWith(
+                                        fontSize: 10, color: kWhite),
+                                  ),
+                                ),
+                              ),
+
+// boton dengan border
+
+Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: primaryColor2, //color of border
+                          width: 1, //width of border
+                        ),
+                        borderRadius: BorderRadius.circular(9),
+                        color: kWhite,
+                      ),
+                      child: Padding(
+                        padding: EdgeInsets.symmetric(
+                            horizontal: 10.w, vertical: 10),
+                        child: Text(
+                          "Facilities",
+                          style: mediumText12.copyWith(
+                              fontSize: 10, color: primaryColor2),
+                        ),
+                      ),
+                    ),

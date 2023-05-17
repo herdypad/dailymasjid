@@ -15,4 +15,14 @@ class BookController extends GetxController {
   void onClose() {
     super.onClose();
   }
+
+  //==========================//
+
+//cek grid genap atau ganjil
+  bool cekGenap(int number) {
+    if (number % 2 == 0) {
+      return true;
+    }
+    return false;
+  }
 }

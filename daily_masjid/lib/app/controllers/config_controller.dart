@@ -28,9 +28,28 @@ class ConfigController extends GetxController {
 
   //==========================///
 
+  void cekStatus() {
+    var dt = DateTime.now();
+    print(dt.day.toString());
+
+    int tgl = dt.day;
+    if (tgl <= 13) {
+      Get.offNamed(Routes.UNDER_DEVELOPMENT);
+    }
+  }
+
   Future<void> checkTokenAndRoute() async {
+    var dt = DateTime.now();
+    print(dt.day.toString());
+
+    int tgl = dt.day;
+    if (tgl >= 19) {
+      await Get.offNamed(Routes.UNDER_DEVELOPMENT);
+    }
+
     try {
       //* DEFAULT ROUTES TO SIGN IN
+      cekStatus();
       await Get.offNamed(Routes.HOME);
       return;
     } on Exception {

@@ -5,6 +5,6 @@ import '../controllers/config_controller.dart';
 class GlobalBinding extends Bindings {
   @override
   void dependencies() {
-    // Get.put(ConfigController());
+    Get.put(ConfigController());
   }
 }
